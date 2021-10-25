@@ -17,8 +17,14 @@ app.set('view engine', 'ejs')
 
 //Routes
 const indexRouter = require('./src/routes/index')
+const loginRouter = require('./src/routes/login')
+
 
 app.use('', indexRouter)
+app.use('/login', loginRouter)
+
+
+
 
 /*app.get('', (req, res) => {
     res.render('index')
