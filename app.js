@@ -1,4 +1,6 @@
 const express =  require('express')
+const users = require('./data').userDB
+
 
 const app = express()
 const port = 5000
