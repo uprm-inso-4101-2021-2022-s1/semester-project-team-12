@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+	<link rel="stylesheet" href="css/login.css">
 	<style>
 		#mylink{
 			font-size: 25px;
@@ -13,26 +14,36 @@
 </head>
 <body align='center'>
     <header>
-		<h1>Login</h1>
+		<h1>PALLET</h1>
 	</header>
+	<div class = "text-center center-div" id="login">
+	<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Sign In </h2>
+    <h2 class="inactive underlineHover">Sign Up </h2>
 
-	<form action="/login" method="POST">
-		<fieldset>
-				
-			<label>Email ID</label>
-			<input type ="email" id = 'email' name="email" placeholder="abc@example.com" required>
-			<br><br>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="Pallet logo.png" id="icon" alt="PALLET" />
+    </div>
 
-			<label>Password</label>
-			<input type="password" id = "password" name="password" required>
-			<br><br>
-
-			<button type ="reset">Reset</button>
-			<button type ="submit">Submit</button>
-		</fieldset>
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
-    <br><br>
-    <a id="mylink" href="./registration.html">Register</a> <!-- This file doesnt exist-->
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+	</div>
+    </form>
 
 </body>
 </html>
