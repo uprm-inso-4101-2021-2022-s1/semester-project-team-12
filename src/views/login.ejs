@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,31 +13,30 @@
 		}
 	</style>
 </head>
-<body align='center'>
-    <header>
-		<h1>PALLET</h1>
-	</header>
+<body align = 'center'>
 	<div class = "text-center center-div" id="login">
 	<div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
     <h2 class="active"> Sign In </h2>
-    <h2 class="inactive underlineHover">Sign Up </h2>
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="Pallet logo.png" id="icon" alt="PALLET" />
+      <h3>PALETTE</h3>
+      <img src="/assets/Palletlogo.png" id="icon" alt="PALLET" />
     </div>
 
     <!-- Login Form -->
     <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="email or username" class="fadeIn second" name="email or username" placeholder="email or username">
       <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
+      
     </form>
 
-    <!-- Remind Passowrd -->
+    <!-- Remind Passowrd And Register-->
     <div id="formFooter">
+      <a class="underlineHover" href="http://localhost:3000/register">Register</a>
       <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
 

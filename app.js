@@ -24,6 +24,7 @@ const loginRouter = require('./src/routes/login')
 
 app.use('', indexRouter)
 app.use('/login', loginRouter)
+app.use('/css', express.static(path.join('/node_modules/bootstrap/dist/css')))
 
 
 //home routing
@@ -34,6 +35,26 @@ app.get('', (req, res) => {
 
 app.get('/login', (req, res) => {
     res.render('login')
+})
+
+app.get('/register', (req, res) => {
+    res.render('register')
+})
+
+app.get('/profile', (req, res) => {
+    res.render('profile')
+})
+
+app.get('/collections', (req, res) => {
+    res.render('collections')
+})
+
+app.get('/gallery', (req, res) => {
+    res.render('gallery')
+})
+
+app.get('/logout', (req, res) => {
+    res.render('logout')
 })
 
 //Listen on port 3000
