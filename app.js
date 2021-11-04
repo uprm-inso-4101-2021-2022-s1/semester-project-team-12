@@ -57,5 +57,9 @@ app.get('/logout', (req, res) => {
     res.render('logout')
 })
 
+app.get('/art', (req, res) => {
+    res.render('art')
+})
+
 //Listen on port 3000
 app.listen(port, () => console.log(`Listening to the server on http://localhost:3000`))

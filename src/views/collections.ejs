@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Collections</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:3000/collections">PALLET</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://localhost:3000/profile">
+            <img src="/assets/ProfilePic.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Collections</h2>
+        <hr>
+        <div>
+          <br>
+          <div class="bg-secondary">
+            <a href="http://localhost:3000/gallery" class="btn"><h4 class="text-dark-50"><u>Gallery:</u></h4></a>
+            <br><br><br><br><br><br><br><br><br><br>
+          </div>
+
+
+        </div>
+        
+        
+
+      </div>
+      <div class="col-md-4"> 
+        <h3>Recent Art</h3>
+        <hr>
+        <div>
+          <br>
+          <a href="http://localhost:3000/art" class="btn btn-success">Art</a>
+
+
+        </div>
+
+
+      </div>
+    </div>
     
   </body>
 </html>
